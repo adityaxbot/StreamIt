@@ -1,5 +1,3 @@
-# (c)  @Avishkarpatil | @AbirHasan2005
-
 import os
 import time
 import string
