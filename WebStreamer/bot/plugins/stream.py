@@ -72,12 +72,12 @@ async def private_receive_handler(c: Client, m: Message):
             file_name = f"{m.audio.file_name}"
 
         msg_text ="""
-<u>Your Link Generated</u>\n
-<b>📂 FILE NAME :</b> {}\n
-<b>📦 FILE SIZE :</b> <i>{}\n
-<b>🔗 DOWNLOAD :</b> <i>{}\n
-<b>⚠️ NOTE : This Is Permanent Link.</b>\n
-© @rulebreakerzzz | @fluxbots """
+\n\n<b>Your Link📎 Has Been Generated 💯</b>\n
+<b>📂 File Name :</b> {}\n
+<b>📦 File Size :</b> {}\n
+<b>📎 Download Link :</b> {}\n
+<b>Permanent Download Link Is Generatd</b>\n
+© 🧑‍💻 Developer : @rulebreakerzzz | ⚡️ Channel : @fluxbots """
 
         await log_msg.reply_text(text=f"**REQUESTED BY:** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**USER ID :** `{m.from_user.id}`\n**DOWNLOAD LINK :** {stream_link}", disable_web_page_preview=True, parse_mode="Markdown", quote=True)
         await m.reply_text(
