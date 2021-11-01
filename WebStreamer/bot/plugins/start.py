@@ -51,7 +51,7 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
         await m.reply_text(
-            text="\n👋<b> Hi There! \n\n✨ I'm A Telegram Bot 🤖 That Can Generate Permanent Download 📥 Links 🔗 For Provided Telegram File/Media.\n\nClick /help For More Information Regarding Bot.\n\n🧑‍💻 Developer : @rulebreakerzzz \n⚡️ Channel : @fluxbots \n👮‍♂️ Support : @fluxsupport </b>\n\n ",
+            text="\n👋<b> Hi There! \n\n✨ I'm A Telegram Bot 🤖 That Can Generate Permanent Download 📥 Links 📎 For Provided Telegram File/Media.\n\nClick /help For More Information Regarding Bot.\n\n🧑‍💻 Developer : @rulebreakerzzz \n⚡️ Channel : @fluxbots \n👮‍♂️ Support : @fluxsupport </b>\n\n ",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton(' Channel ', url='t.me/fluxbots'), InlineKeyboardButton(' Support ', url='t.me/fluxsupport')],
@@ -121,16 +121,16 @@ async def start(b, m):
                                      Var.PORT,
                                      get_msg.message_id)
 
-        msg_text = """<u>Your Link Generated</u>\n
-<b>📂FILE NAME :</b> {}\n
-<b>📦FILE SIZE :</b> {}\n
-<b>🔗DOWNLOAD :</b> {}\n
-<b>⚠️NOTE : This Is Permanent Link.</b>\n
-© @rulebreakerzzz | @fluxbots """
+        msg_text = """\n\n<b>Your Link📎 Has Been Generated 💯</u>\n
+<b>📂 File Name :</b> {}\n
+<b>📦 File Size :</b> {}\n
+<b>📎 Download Link :</b> {}\n
+<b>Permanent Download Link Is Generatd</b>\n
+© 🧑‍💻 Developer : @rulebreakerzzz | ⚡️ Channel : @fluxbots """
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
             parse_mode="Markdown",
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Download Link 🔗", url=stream_link)]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Download Link 📥", url=stream_link)]])
         )
 
 
@@ -175,7 +175,7 @@ async def help_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        text="\n\n👮‍♂️<b>It's Not That Tough😒\n\n- Just Send Me Any Telegram File/Media.\n\nI Will Generate An External Download Link For Provided File.\n\n- Add Me In Groups/Channels For Direct Download Links.\n\n- Permanent High-Speed Download Links Are Generated.\n\n </b>", 
+        text="""\n\n👮‍♂️<b>It's Not That Tough😒</b>\n\n <b>- Just Send Me Any Telegram File/Media.</b>\n\n<b>- I Will Generate An External Download Link For Provided File.</b>\n\n- <b>Add Me In Groups/Channels For Direct Download Links.</b>\n\n<b>- Permanent High-Speed Download Links Are Generated.\n\n </b>""", 
   parse_mode="Markdown",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
