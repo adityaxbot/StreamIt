@@ -1,5 +1,3 @@
-# (c) @AvishkarPatil | @EverythingSuckz
-
 from os import getenv, environ
 from dotenv import load_dotenv
 
