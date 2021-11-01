@@ -1,3 +1,3 @@
-# This file is a part of TG-FileStreamBot
-# Coding : Jyothis Jayanth [@EverythingSuckz]
-# Maintained By : Avishkar Patil [ @AvishkarPatil ] [ Telegram ]
+# StreamIt
+# Code By : 亗 𝗣𝗥𝗢𝗙𝗘𝗦𝗦𝗢𝗥 亗 [@rulebreakerzzz][ Telegram ]
+# Not Maintained
