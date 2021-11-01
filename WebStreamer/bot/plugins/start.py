@@ -8,47 +8,47 @@ from pyrogram.errors import UserNotParticipant
 db = Database(Var.DATABASE_URL, Var.SESSION_NAME)
 
 START_TEXT = """
-<i>👋 Hi There,</i>{}\n
-<i>I'm A Telegram File Streamer Bot.🤖</i>\n
-<i>🆘 Click /help For More Info.</i>\n
-<i><b>🔰 Godfather :</b>@rulebreakerzzz 🔰</i>"""
+👋 Hi, {}\n
+I'm A Telegram File Streamer Bot.🤖\n
+Click /help For More Info.\n
+<b>🔰Godfather: </b>@rulebreakerzzz"""
 
 HELP_TEXT = """
-<i> It's Not That Tough🎗</i>
-<i>- Just Send Me Any Telegram File/Media.📂</i>
-<i>- I Will Generate An External Download Link For Provided File.🔗</i>
-<i>- Add Me In Groups/Channels For Direct Download Links.</i>
-<i>- Permanent High-Speed Download Links Are Generated.</i>\n
-<u>- ⚠️Don't Send P*RN 🔞Contents</u>\n
-<i> Contact Developer/Report Bugs🧑‍💻</i> <b>: <a href='https://t.me/rulebreakerzzz'>[ Click Here ]</a></b>"""
+ It's Not That Tough🎗</i>
+- Just Send Me Any Telegram File/Media.📂
+- I Will Generate An External Download Link For Provided File.🔗
+- Add Me In Groups/Channels For Direct Download Links.
+- Permanent High-Speed Download Links Are Generated.\n
+- ⚠️Don't Send P*RN 🔞Contents\n\n
+Contact Developer🧑‍💻</i> <b>: <a href='https://t.me/rulebreakerzzz'>[亗 𝗣𝗥𝗢𝗙𝗘𝗦𝗦𝗢𝗥 亗]</a></b>"""
 
 ABOUT_TEXT = """
-<b>🤖Name : FluXStreamer</b>\n
-<b>⚡️Version : v2.1.9</a></b>\n
-<b>ℹ️Source : <a href='https://github.com/workforce-bot4917/streamit'>Click Here</a></b>\n
-<b>♻️Github : <a href='https://gitHub.com/fluxbots'>Follow</a></b>\n
-<b>👑Godfather: <a href='https://telegram.me/rulebreakerzzz'>亗 𝗣𝗥𝗢𝗙𝗘𝗦𝗦𝗢𝗥 亗</a></b>\n
-<b>📅Last Updated : <a href='https://telegram.me/rulebreakerzzz'>[ 18-Oct-21 ] 07:12 AM</a></b>"""
+<b>🤖 Name : FluXStreamer</b>\n
+<b>⚡️ Version : v2.1.9</a></b>\n
+<b>ℹ️ Source : <a href='https://github.com/workforce-bot4917/streamit'>Click Here</a></b>\n
+<b>♻️ Github : <a href='https://gitHub.com/fluxbots'>Follow Me</a></b>\n
+<b>👑 Godfather: <a href='https://telegram.me/rulebreakerzzz'>亗 𝗣𝗥𝗢𝗙𝗘𝗦𝗦𝗢𝗥 亗</a></b>\n
+<b>📅 Last Updated : <a href='https://telegram.me/rulebreakerzzz'>18-Oct-21</a></b>"""
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
-        InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about'),
-        InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close')
+        InlineKeyboardButton('HELP', callback_data='help'),
+        InlineKeyboardButton('ABOUT', callback_data='about'),
+        InlineKeyboardButton('CLOSE', callback_data='close')
         ]]
     )
 HELP_BUTTONS = InlineKeyboardMarkup(
-        [[
-        InlineKeyboardButton('Hᴏᴍᴇ', callback_data='home'),
-        InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about'),
-        InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close')
+         [[
+        InlineKeyboardButton('HELP', callback_data='help'),
+        InlineKeyboardButton('ABOUT', callback_data='about'),
+        InlineKeyboardButton('CLOSE', callback_data='close')
         ]]
     )
 ABOUT_BUTTONS = InlineKeyboardMarkup(
-        [[
-        InlineKeyboardButton('Hᴏᴍᴇ', callback_data='home'),
-        InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
-        InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close')
+      [[
+        InlineKeyboardButton('HELP', callback_data='help'),
+        InlineKeyboardButton('ABOUT', callback_data='about'),
+        InlineKeyboardButton('CLOSE', callback_data='close')
         ]]
     )
 
