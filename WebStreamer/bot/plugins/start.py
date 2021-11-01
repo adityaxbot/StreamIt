@@ -180,13 +180,12 @@ async def start(b, m):
                                      get_msg.message_id)
 
         msg_text ="""
-<i><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u></i>\n
-<b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{}</i>\n
-<b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>\n
-<b>📥 Dᴏᴡɴʟᴏᴀᴅ :</b> <i>{}</i>\n
-<b>🚸 Nᴏᴛᴇ : Lɪɴᴋ ᴇxᴘɪʀᴇᴅ ɪɴ 24 ʜᴏᴜʀꜱ</b>\n
-<i>🍃 Bᴏᴛ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ :</i> <b>@AvishkarPatil</b>
-"""
+<i><u>Your Link Generated</u></i>\n
+<b>📂FILE NAME :</b> <i>{}</i>\n
+<b>📦FILE SIZE :</b> <i>{}</i>\n
+<b>🔗DOWNLOAD :</b> <i>{}</i>\n
+<b>⚠️NOTE : This Is Permanent Link.</b>\n
+<i>© @rulebreakerzzz | @fluxbots </i>"""
 
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
