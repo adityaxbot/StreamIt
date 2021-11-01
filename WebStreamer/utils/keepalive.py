@@ -1,5 +1,3 @@
-# Bot Sleeping
-
 import logging
 import requests
 from ..vars import Var
