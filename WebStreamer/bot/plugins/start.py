@@ -175,7 +175,7 @@ async def help_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        text="<b>It's Not That Tough😒\n\n- Just Send Me Any Telegram File/Media.📂\n\n- I Will Generate An External Download Link For Provided File.🔗\n\n- Add Me In Groups/Channels For Direct Download Links.\n\n- Permanent High-Speed Download Links Are Generated.\n\n- Don't Send Porn Contents🔞.\n</b>", 
+        text="\n\n👮‍♂️<b>It's Not That Tough😒\n\n- Just Send Me Any Telegram File/Media.\n\nI Will Generate An External Download Link For Provided File.\n\n- Add Me In Groups/Channels For Direct Download Links.\n\n- Permanent High-Speed Download Links Are Generated.\n\n </b>", 
   parse_mode="Markdown",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
