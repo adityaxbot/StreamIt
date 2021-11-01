@@ -51,7 +51,7 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
         await m.reply_text(
-            text="👋 Hi, {}\n<b>✨ I'm A Telegram Bot 🤖 That Can Generate Permanent Download 📥 Links 🔗 For Provided Telegram File/Media.</b\n<b>Click /help For More Information Regarding Bot.</b>\n<b>🧑‍💻 Developer : </b>@rulebreakerzzz \n\n<b>⚡️ Channel : </b> @fluxbots \n\n<b>👮‍♂️ Support : </b>@fluxsupport \n ",
+            text="👋<b> Hi There! \n✨ I'm A Telegram Bot 🤖 That Can Generate Permanent Download 📥 Links 🔗 For Provided Telegram File/Media.\nClick /help For More Information Regarding Bot.\n\n🧑‍💻 Developer : @rulebreakerzzz \n⚡️ Channel : @fluxbots \n👮‍♂️ Support : @fluxsupport </b>\n\n ",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton(' Channel ', url='t.me/fluxbots'), InlineKeyboardButton(' Support ', url='t.me/fluxsupport')],
