@@ -51,11 +51,11 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
         await m.reply_text(
-            text="\n👋<b> Hi There! \n\n✨ I'm A Telegram Bot 🤖 That Can Generate Permanent Download 📥 Links 📎 For Provided Telegram File/Media.\n\nClick /help For More Information Regarding Bot.\n\n🧑‍💻 Developer : @rulebreakerzzz \n⚡️ Channel : @fluxbots \n👮‍♂️ Support : @fluxsupport </b>\n\n ",
+            text="\n👋<b> Hi There! \n\n✨ I'm A Telegram Bot 🤖 That Can Generate Permanent Download 📥 Links 📎 For Provided Telegram File/Media.\n\nClick /help For More Information Regarding Bot.\n\n🧑‍💻 Developer : adityaxbot/StreamIt/ \n⚡️ Channel : @camo_saphien \n👮‍♂️ Support : @fluxsupport </b>\n\n ",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton(' Channel ', url='t.me/fluxbots'), InlineKeyboardButton(' Support ', url='t.me/fluxsupport')],
-                    [InlineKeyboardButton(' Developer ', url='t.me/rulebreakerzzz'), InlineKeyboardButton(' Source ', url='https://github.com/workforce-bot4917/StreamIt')]
+                    [InlineKeyboardButton(' Developer ', url='t.me/camo_saphien'), InlineKeyboardButton(' Source ', url='https://github.com/adityaxbot/StreamIt/')]
                 ]
             ),
             disable_web_page_preview=True
@@ -67,7 +67,7 @@ async def start(b, m):
                 if user.status == "kicked":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="Sorry Sir, You Are Not Allowed To Use Me. Contact My [Developer](t.me/rulebreakerzzz).",
+                        text="Sorry Sir, You Are Not Allowed To Use Me. Contact My [Developer](t.me/camo_saphien).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -75,7 +75,7 @@ async def start(b, m):
             except UserNotParticipant:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="**Please Join My Updates Channel To Use This Bot!**\n\nDue to Overload, Only Channel Subscribers Can Use This Bot!\n\n © @rulebreakerzzz | @fluxbots",
+                    text="**Please Join My Updates Channel To Use This Bot!**\n\nDue to Overload, Only Channel Subscribers Can Use This Bot!\n\n © @camo_saphien | @fluxbots",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
@@ -93,7 +93,7 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="Something went Wrong. Contact my [Developer](t.me/rulebreakerzzz).",
+                    text="Something went Wrong. Contact my [Developer](t.me/camo_saphien).",
                     parse_mode="markdown",
                     disable_web_page_preview=True)
                 return
@@ -126,7 +126,7 @@ async def start(b, m):
 <b>📦 File Size :</b> {}\n
 <b>📎 Download Link :</b> {}\n
 <b>Permanent Download Link Is Generatd</b>\n
-© 🧑‍💻 Developer : @rulebreakerzzz | ⚡️ Channel : @fluxbots """
+© 🧑‍💻 Developer : @camo_saphien | ⚡️ Channel : @fluxbots """
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
             parse_mode="Markdown",
@@ -148,7 +148,7 @@ async def help_handler(bot, message):
             if user.status == "kicked":
                 await bot.send_message(
                     chat_id=message.chat.id,
-                    text="Sorry Sir, You are Banned to use me. Contact my [Developer](https://t.me/rulebreakerzzz).",
+                    text="Sorry Sir, You are Banned to use me. Contact my [Developer](https://t.me/camo_saphien).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -170,18 +170,18 @@ async def help_handler(bot, message):
         except Exception:
             await bot.send_message(
                 chat_id=message.chat.id,
-                text="Something went Wrong. Contact my [Developer](https://t.me/rulebreakerzzz).",
+                text="Something went Wrong. Contact my [Developer](https://t.me/camo_saphien).",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        text="""\n\n👮‍♂️<b>It's Not That Tough😒</b>\n\n <b>- Just Send Me Any Telegram File/Media.</b>\n\n<b>- I Will Generate An External Download Link For Provided File.</b>\n\n- <b>Add Me In Groups/Channels For Direct Download Links.</b>\n\n<b>- Permanent High-Speed Download Links Are Generated.\n\n </b>""", 
+        text="""\n\n👮‍♂️It's Not That Tough😒\n- Just Send Me Any Telegram File/Media.\n- I Will Generate An External Download Link For Provided File.\n-Add Me In Groups/Channels For Direct Download Links.\n- Permanent High-Speed Download Links Are Generated.\n\n""", 
   parse_mode="Markdown",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton(' Channel ', url='t.me/fluxbots'), InlineKeyboardButton(' Support ', url='t.me/fluxsupport')],
-                    [InlineKeyboardButton(' Developer ', url='t.me/rulebreakerzzz'), InlineKeyboardButton(' Source ', url='https://github.com/workforce-bot4917/StreamIt')]
+                    [InlineKeyboardButton(' Developer ', url='t.me/camo_saphien'), InlineKeyboardButton(' Source ', url='https://github.com/adityaxbot/StreamIt')]
             ]
         )
     )
