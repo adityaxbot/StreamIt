@@ -121,12 +121,12 @@ async def start(b, m):
                                      Var.PORT,
                                      get_msg.message_id)
 
-        msg_text = """\n\n<b>Your Link📎 Has Been Generated 💯</u>\n
+        msg_text = ""\n\n<b>Your Link📎 Has Been Generated 💯</b>\n
 <b>📂 File Name :</b> {}\n
 <b>📦 File Size :</b> {}\n
 <b>📎 Download Link :</b> {}\n
 <b>Permanent Download Link Is Generatd</b>\n
-© 🧑‍💻 Developer : @rulebreakerzzz | ⚡️ Channel : @fluxbots """
+© 🧑‍💻 Developer : @rulebreakerzzz | ⚡️ Channel : @fluxbots ""
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
             parse_mode="Markdown",
