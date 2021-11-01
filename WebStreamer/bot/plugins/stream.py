@@ -15,7 +15,7 @@ async def private_receive_handler(c: Client, m: Message):
         await db.add_user(m.from_user.id)
         await c.send_message(
             Var.BIN_CHANNEL,
-            f"Nᴇᴡ Usᴇʀ Jᴏɪɴᴇᴅ : \n\nNᴀᴍᴇ : [{m.from_user.first_name}](tg://user?id={m.from_user.id}) Sᴛᴀʀᴛᴇᴅ Yᴏᴜʀ Bᴏᴛ !!"
+            f"Nᴇᴡ Usᴇʀ Jᴏɪɴᴇᴅ : \n\nNᴀᴍᴇ : [{m.from_user.first_name}](tg://user?id={m.from_user.id}) Started Your Bot !!"
         )
     if Var.UPDATES_CHANNEL != "None":
         try:
@@ -31,9 +31,13 @@ async def private_receive_handler(c: Client, m: Message):
         except UserNotParticipant:
             await c.send_message(
                 chat_id=m.chat.id,
-                text="""<i>Join My Updates Channel To Use Me🔐</i>""",
+                text="""
+                Please Join My Updates Channel To Use Me🔐!
+
+                Due To Overload, Only Channel Subscribers Can Use Me!!
+                """,
                 reply_markup=InlineKeyboardMarkup(
-                    [[ InlineKeyboardButton("Join Now🔓", url=f"https://t.me/{Var.UPDATES_CHANNEL}") ]]
+                    [[ InlineKeyboardButton("⚡️Join Updates Channel⚡️", url=f"https://t.me/{Var.UPDATES_CHANNEL}") ]]
                 ),
                 parse_mode="HTML"
             )
@@ -68,12 +72,12 @@ async def private_receive_handler(c: Client, m: Message):
             file_name = f"{m.audio.file_name}"
 
         msg_text ="""
-<i><u>Your Link Generated</u></i>\n
-<b>📂FILE NAME :</b> <i>{}</i>\n
-<b>📦FILE SIZE :</b> <i>{}</i>\n
-<b>🔗DOWNLOAD :</b> <i>{}</i>\n
-<b>⚠️NOTE : This Is Permanent Link.</b>\n
-<i>© @rulebreakerzzz | @fluxbots </i>"""
+<u>Your Link Generated</u>\n
+<b>📂 FILE NAME :</b> {}\n
+<b>📦 FILE SIZE :</b> <i>{}\n
+<b>🔗 DOWNLOAD :</b> <i>{}\n
+<b>⚠️ NOTE : This Is Permanent Link.</b>\n
+© @rulebreakerzzz | @fluxbots """
 
         await log_msg.reply_text(text=f"**REQUESTED BY:** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**USER ID :** `{m.from_user.id}`\n**DOWNLOAD LINK :** {stream_link}", disable_web_page_preview=True, parse_mode="Markdown", quote=True)
         await m.reply_text(
